@@ -144,13 +144,13 @@ def main():
         with col1:
             show_images = st.checkbox("Show Image Thumbnails", value=True)
         with col2:
-            image_size = st.slider("Thumbnail Size", min_value=50, max_value=300, value=150)
+            image_size = st.slider("Thumbnail Size", min_value=50, max_value=500, value=400)
     
     # Prepare the data for display
     if show_images:
         # Create a custom dataframe display with images
         for i, row in df.iterrows():
-            col1, col2 = st.columns([1, 3])
+            col1, col2 = st.columns([2, 2])
             
             with col1:
                 # Display image
