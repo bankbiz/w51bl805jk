@@ -1,10 +1,6 @@
 import streamlit as st
 import json
 import pandas as pd
-import os
-from PIL import Image
-import io
-import requests
 import math
 
 # Set page configuration
