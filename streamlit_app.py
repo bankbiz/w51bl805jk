@@ -177,22 +177,22 @@ def main():
     with col1:
         if st.button("⏪ First Page"):
             st.session_state.page_num = 1
-            st.experimental_rerun()
+            st.rerun()
     
     with col2:
         if st.button("◀️ Previous Page") and page_num > 1:
             st.session_state.page_num = page_num - 1
-            st.experimental_rerun()
+            st.rerun()
     
     with col3:
         if st.button("Next Page ▶️") and page_num < total_pages:
             st.session_state.page_num = page_num + 1
-            st.experimental_rerun()
+            st.rerun()
     
     with col4:
         if st.button("Last Page ⏩"):
             st.session_state.page_num = total_pages
-            st.experimental_rerun()
+            st.rerun()
     
     # Footer
     st.write("")
